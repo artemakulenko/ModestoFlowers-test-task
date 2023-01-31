@@ -1,0 +1,229 @@
+@use '../abstracts/variables' as *;
+
+
+.header {
+  position: absolute;
+  min-height: 126px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+  padding: 20px 0;
+  &__grid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__logo {
+    margin-right: auto;
+    &-wrap {
+      height: 86px;
+      width: 98px;
+      img{
+        display:block;
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+  }
+
+  &__phone {
+    padding: 16px 30px;
+    a{
+      font-family: 'Roboto Bold';
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  }
+  &__langs {
+    display: none;
+  }
+
+  &__signin {
+    padding: 14px 30px;
+    margin-right: -10px;
+  }
+
+  &__burger{
+    display: none;
+  }
+
+
+  &__link{
+    font-family: 'Raleway Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $olive-yellow;
+    text-decoration: none;
+  }
+  
+  .btn{
+    font-family: 'Raleway Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 21px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: map-get($breakpoints, large))  {
+    &__grid{
+      display: flex;
+    }
+    &__nav{
+      display: none;
+    }
+
+    &__langs{
+      display: initial;
+      padding: 8px;
+      .tabs-nav{
+        display: flex;
+        gap: 8px;
+        &__link{
+          font-family: 'Raleway Regular';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 2rem;
+          line-height: 23px;
+          color: $dark-grayish-yellow;
+          text-decoration: none;
+          &.active{
+            font-family: 'Raleway Medium';
+            color: $olive-yellow;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    
+
+    
+    &__burger{
+      display: initial;
+      padding: 9px 7.5px;
+      &-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        cursor: pointer;
+        span{
+          height: 2px;
+          width: 25px;
+          display: block;
+          background: $olive-yellow;
+          border-radius: 50%;
+          border-radius: 5px;
+          &:nth-child(2){
+            width: 19px;
+          }
+          &:nth-child(3){
+            width: 12px;
+          }
+        }
+      }
+    }
+
+    &__signup{
+      display: none;
+    }
+
+    &__signin{
+      display: initial;
+      margin-right: unset;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  
+
+  @media screen and (max-width: map-get($breakpoints, medium) )  {
+    &__grid{
+      gap: 10px;
+      justify-content: space-between;
+    }
+     
+    
+    &__logo{
+      margin-right: unset;
+      &-wrap{
+        width: 48px;
+        height: 42px;
+      }
+    }
+
+    &__signin{
+      display: none;
+    }
+
+
+
+    &__phone{
+      padding: 8px;
+      a{
+        font-size: 1.6rem;
+      }
+    }
+
+
+    &__langs{
+      .tabs-nav__link{
+        font-size: 1.6rem;
+      }
+    } 
+
+
+    &__burger{
+      padding: 6px 5.5px;
+      &-wrap{
+        gap: 6px;
+      }
+      span{
+        width: 19px;
+        &:nth-child(2){
+          width: 14px;
+        }
+        &:nth-child(3){
+          width: 9px;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modesto Flowers</title>
+  <link rel="stylesheet" href="scss/style.scss">
+</head>
+<body>
+  <div class="site-content">
+    <header class="header">
+      <div class="container">
+        <div class="header__grid">
+
+          <div class="header__logo">
+            <div class="header__logo-wrap">
+              <a href="#">
+                <img src="/images/logo.svg" alt="">
+              </a>      
+            </div>
+          </div>
+
+          <div class="header__nav">
+            <nav>
+              <ul class="header__ul">
+                <li class="header__list">
+                  <a href="#" class="header__link">Магазины</a>
+                </li>
+                <li class="header__list">
+                  <a href="#" class="header__link">Контакты</a>
+                </li>
+                <li class="header__list">
+                  <a href="#" class="header__link">О нас</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__phone">
+            <a href="tel:+36787547894" class="header__link">
+              +3 67 8754 7894
+            </a>
+          </div>
+
+          <div class="header__langs">
+            <nav class="tabs-nav">
+              <a href="#" class="tabs-nav__link active" id="ru">Ru</a>
+              <a href="#" class="tabs-nav__link" id="eng">Eng</a>
+            </nav>
+          </div>
+
+          <div class="header__signin">
+            <a href="#" class="header__link">Войти</a>
+          </div>
+
+          <div class="header__signup">
+            <button class="btn btn-sm btn-transparent">
+              Создать аккаунт
+            </button>
+          </div>
+
+          <div class="header__burger">
+            <div class="header__burger-wrap">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+
+
+
+    <section class="first">
+      <div class="flowers">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating-rotated disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+        <img src="images/flower.png" alt="flower" class="flowers__item floating disable-drag">
+      </div>
+      <div class="container">
+        <div class="first__container">
+          <h1 class="first__title">
+            <span class="first__title-desktop">
+              Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!
+            </span>
+            <span class="first__title-mobile">
+              Мы будем рады сотрудничать с вами на Международной цветочной онлайн-площадкe!
+            </span>
+          </h1>
+          <h3 class="first__subtitle">
+            Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!
+          </h3>
+          <div>
+            <div class="first__btnscontainer">
+              <button class="btn btn-lg btn-yellow">
+                Начать покупать
+              </button>
+              <button class="btn btn-xl btn-light">
+                Начать продавать
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="second">
+      <div class="container">
+        <div class="promote">
+          <div class="promote__grid">
+
+            <div class="promote__item">
+              <h2 class="promote__title">
+                Заполните форму и начните развивать свой бизнес прямо сейчас!
+              </h2>
+              <p class="promote__subtitle">
+                Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и
+                корректно! После подтверждения регистрации вы попадёте в систему, где большинство процессов
+                автоматизированы, что сэкономит ваше время и деньги!
+              </p>
+              <img class="promote__bg" src="images/flower.png" alt="">
+            </div>
+
+            <div class="promote__item">
+              <form class="form">
+                <div class="step step-1 active">
+  
+                  <div class="form__group">
+                    <label class="form__label" for="username">Ваше имя</label>
+                    <input class="form__input to-stats" type="text" id="username" name="username"
+                      placeholder="Фролова Александра Васильевна">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="form__group">
+                    <label class="form__label" for="company-name">Название Компании</label>
+                    <input class="form__input to-stats" type="text" id="company-name" name="company-name"
+                      placeholder="ООО Атлантика">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="form__group">
+                    <label class="form__label" for="email">E-mail</label>
+                    <input class="form__input to-stats" type="email" id="email" name="email"
+                      placeholder="flolovaalexa@com.ru">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="form__group">
+                    <label class="form__label" for="phone">Номер телефона</label>
+                    <input class="form__input to-stats" type="text" id="phone" name="phone"
+                      placeholder="+7 (XXX) - XXX XX XX">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="form__group">
+                    <label class="form__label" for="promocode">Промокод</label>
+                    <input class="form__input to-stats" type="text" id="promocode" name="promocode" placeholder="HGF864">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <button type="button" class="btn btn-yellow btn-md next-btn submit-first">Далее</button>
+                </div>
+  
+  
+                <div class="step step-2">
+  
+                  <div class="form__group">
+                    <label class="form__label" for="country">Пароль</label>
+                    <input class="form__input to-stats" type="password" id="password" name="password">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="form__group">
+                    <label class="form__label" for="city">Повторите пароль</label>
+                    <input class="form__input" type="password" id="password2" name="password2">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="capcha"></div>
+  
+                  <div class="form__group">
+                    <label class="form__label" for="capchaInput">Введите символы из картинки</label>
+                    <input class="form__input" type="text" id="capchaInput" name="capchaInput">
+                    <p class="form__error"></p>
+                  </div>
+  
+                  <div class="form__btns">
+                    <button type="button" class="btn btn-md btn-yellow previous-btn">Назад</button>
+                    <button type="submit" class="btn btn-md btn-light submit-btn">Подтвердить</button>
+                  </div>
+  
+                  <div class="form__group policy">
+                    <label class="form__label policy__text" for="policy">
+                      Я даю согласие на обработку моих персональных данных и правовых документов
+                    </label>
+                    <input type='checkbox' class="form__input policy__checkbox" name='policy' value='valuable'
+                      id="policy" />
+                    <label for="policy"></label>
+                    <p class="form__error policy__error"></p>
+                  </div>
+                </div>
+              </form>
+  
+              <div class="stats stats__disable">
+                <p> 🏆 Ура, сообщение отправлено! </p>
+                <p> Теперь все важные данные из формы лежат в консоли</p>
+                <p> Чтобы открыть её - нажмите <code> f12 -> console </code> </p>
+                <button class="stats__remove btn btn-xl btn-light"> Убрать это сообщение </button>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+
+          <div class="footer__item">
+            <div class="footer__title">Наши офисы</div>
+            <div class="footer__lists">
+              <ul class="footer__list">
+                <li class="footer__list-item">Московский офис</li>
+                <li class="footer__list-item"><a class="footer__list-link" href="tel:+74552678907">+7 455 267-89-07</a>
+                </li>
+                <li class="footer__list-item">Берсеневский пер., д. 56, стр. 4,</li>
+                <li class="footer__list-item">6-й эт., Москва, 567754</li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list-item">Ростовский офис</li>
+                <li class="footer__list-item"><a class="footer__list-link" href="tel:+78788880167">+7 878 888-01-67</a>
+                </li>
+                <li class="footer__list-item">Буденовский пр-т, д. 84, 6-й эт.,</li>
+                <li class="footer__list-item">Ростов-на-Дону, 679965</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <div>
+              <div class="footer__title">
+                Мы в соц сетях
+              </div>
+              <ul class="footer__list footer__list-gap">
+                <li class="footer__list-item"><a class="footer__list-link"
+                    href="https://www.instagram.com/modestoflowers/" target="_blank">Instagram</a></li>
+                <li class="footer__list-item"><a class="footer__list-link"
+                    href="https://www.facebook.com/modestoflowersco" target="_blank">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <div class="footer__title">Свяжитесь с нами</div>
+            <ul class="footer__list footer__list-gap">
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__list-link-roboto" href="tel:+36787547894">+3 67 8754 7894</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link"
+                  href="mailto:mflowers@flo.com">mflowers@flo.com</a>
+              </li>
+            </ul>
+            <button class="btn btn-xs btn-yellow">
+              Написать <svg width="24" height="24"> <use xlink:href="images/sprite.svg#mail"></use> </svg>
+            </button>
+          </div>
+
+          <div class="footer__item footer__copyright">
+            <p> 
+              Авторские права 2008-2022 <a href="https://m-flowers.com" target="_blank">M-flowers.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

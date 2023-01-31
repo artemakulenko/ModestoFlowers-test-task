@@ -1,0 +1,86 @@
+$very-pale-yellow: #fff8e1;
+$pale-yellow: #fffbed;
+$light-yellow: #ffe182;
+$dark-grayish-yellow: #9b9b99;
+$dark-yellow: #8e825c;
+$olive-yellow: #372e11;
+$light-gray: #ededed;
+$dark-cyan: #a0b2af;
+$grayish-red: #b9b3b3;
+$very-dark-cyan: #0e493f;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$fonts: (
+  Marmelad: (
+    Regular: true,
+  ),
+  PTSans: (
+    Regular: true,
+  ),
+  Raleway: (
+    Light: true,
+    Regular: true,
+    Medium: true,
+    SemiBold: true,
+  ),
+  Roboto: (
+    Medium: true,
+    Bold: true
+  ),
+  RubikMarkerHatch:(
+    Regular: true
+  )
+);
+
+
+$buttons: (
+  xs: 12px 32px,
+  sm: 14px 30px,
+  md: 16px 30px,
+  lg: 22px 34px,
+  xl: 24px 42px,
+);
+
+
+
+$breakpoints: (
+  small: 359px,
+  medium: 767px,
+  large: 1365px
+);
+
+$h1-font-sizes:(
+  null: (2.4rem, 28.58px),
+  medium: (5.6rem, 66.7px),
+  large: (5.6rem, 66.7px),
+);
+
+$h2-font-sizes:(
+  null: (2.4rem, 29px),
+  medium: (3.6rem, 43px),
+  large: (3.6rem, 43px),
+);
+
+$h3-font-sizes:(
+  null: (1.6rem, 19px),
+  medium: (2.6rem, 31px),
+  large: (2.6rem, 31px),
+);
+
+$p-font-sizes:(
+  null: (16px, 19px),
+  medium: (18px, 21px),
+  large: (18px, 21px),
+);

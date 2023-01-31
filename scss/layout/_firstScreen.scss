@@ -1,0 +1,160 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+
+
+
+.flowers{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  &__item{
+    position: absolute;
+    max-width: 100%;
+    object-fit: cover;
+    &:nth-child(1){
+      left: -355px;
+      top: 188px;
+      bottom: 0;
+    }
+    &:nth-child(2){
+      width: 44px;
+      height: 44px;
+      left: 442px;
+      top: 196px;
+      bottom: 0;
+      animation-delay: 1s;
+    }
+    &:nth-child(3){
+      width: 164px;
+      height: 161px;
+      left: 384px;
+      bottom: 52px;
+      animation-delay: 1.5s;
+    }
+    &:nth-child(4){
+      width: 44px;
+      height: 44px;
+      left: 950px;
+      bottom: 60px;
+      animation-delay: 2s;
+    }
+    &:nth-child(5){
+      width: 62px;
+      height: 62px;
+      left: 991px;
+      top: -16px;
+      animation-delay: 2.5s;
+    }
+    &:nth-child(6){
+      width: 60px;
+      height: 60px;
+      right: 369px;
+      bottom: 510px;
+      animation-delay: 3s;
+    }
+    &:nth-child(7){
+      width: 104px;
+      height: 103px;
+      right: 173px;
+      top: 236px;
+      animation-delay: 3.5s;
+    }
+    &:nth-child(8){
+      width: 44px;
+      height: 44px;
+      right: 31px;
+      bottom: 440px;
+      animation-delay: 4s;
+    }
+    &:nth-child(9){
+      width: 594px;
+      height: 593px;
+      right: 0;
+      animation-delay: 1.2s;
+      bottom: -278px;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) and (max-width: map-get($breakpoints, large) ){
+    display: none;
+  }
+  @media screen and (max-width: map-get($breakpoints, medium) ){
+    display: none;
+  }
+}
+
+.first{
+  min-height: 100dvh;
+  min-height: 100vh;
+  background: $pale-yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  padding: 66px 0;
+  &__container{
+    max-width: 887px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  &__btnscontainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 58px;
+  }
+  &__title{
+    font-family: 'Marmelad Regular';
+    font-weight: 400;
+    color: $olive-yellow;
+    &-mobile{
+      display: none;
+    }
+  }
+  &__subtitle{
+    font-family: 'Raleway Light';
+    font-weight: 300;
+    color: $olive-yellow;
+    max-width: 700px;
+    text-align: center;
+    margin: 40px auto 0;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, medium)) and (max-width: map-get($breakpoints, large) ){
+    background: $pale-yellow url(/images/bg-tablet.png) no-repeat center/cover;
+  }
+
+
+  @media screen and (max-width: map-get($breakpoints, medium) ){
+    background: $pale-yellow url(/images/bg-mobile.png) no-repeat center/cover;
+
+    &__title{
+      &-desktop{
+        display: none;
+      }
+      &-mobile{
+        display: initial;   
+      }
+    }
+
+    &__btnscontainer{
+      margin-top: 24px;
+      button{
+        padding: 12px 13px;
+        font-size: 1.6rem;
+        flex: none;
+        &:nth-child(2){
+          padding: 12px 7.5px;
+        }
+      }
+    }
+  }
+
+
+}

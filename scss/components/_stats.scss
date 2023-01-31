@@ -1,0 +1,9 @@
+.stats{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
+  &__disable{
+    display: none;
+  }
+}

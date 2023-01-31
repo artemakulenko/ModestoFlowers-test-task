@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+
+
+button.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $olive-yellow; 
+
+  border: none;
+  cursor: pointer;
+
+  border-radius: 12px;
+  
+  font-family: 'Raleway SemiBold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 21px;
+  transition: background-color 300ms ease ;
+  &-yellow{
+    @include btnBgAndHover($light-yellow) 
+  };
+  &-light{
+    @include btnBgAndHover($light-gray) 
+  };
+  &-transparent{
+    background: transparent;
+    border: 1px solid;
+  }
+  @each $prop, $value in $buttons{
+    &-#{$prop}{
+      padding: $value;
+    }
+  }
+}

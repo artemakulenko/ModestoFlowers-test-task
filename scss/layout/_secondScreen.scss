@@ -1,0 +1,74 @@
+@use '../abstracts/variables' as *;
+
+.second{
+  min-height: 100dvh;
+  min-height: 100vh;
+  padding: 40px 0;
+  background: $pale-yellow url(/images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promote{
+  background: $pale-yellow;
+  padding: 80px;
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+  &__item{
+    position: relative;
+  }
+  &__grid{
+    display: grid;
+    grid-template-columns: 3fr minmax(320px, 1fr);
+    gap: 80px;
+  }
+  &__title{
+    font-family: 'Marmelad Regular';
+    color: $olive-yellow;
+    margin-bottom: 40px;
+  }
+  &__subtitle{
+    color: $olive-yellow;
+  }
+  &__bg{
+    position: absolute;
+    width: 100%;
+    bottom: -391px;
+  }
+
+
+  @media screen and (min-width: map-get($breakpoints, medium)) and (max-width: map-get($breakpoints, large) )  {
+    padding: 32px;
+    
+    &__grid{
+      grid-template-columns: 1fr;
+      gap: 58px;
+    }
+    
+    &__bg{
+      display: none; 
+    }
+  }
+
+
+  @media screen and (max-width: map-get($breakpoints, medium) )  {
+    padding: 20px;
+    
+
+    &__title{
+      margin-bottom: 32px;
+    }
+    &__grid{
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    &__bg{
+      display: none; 
+    }
+  }
+}

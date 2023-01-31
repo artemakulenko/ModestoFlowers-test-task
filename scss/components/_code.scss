@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+
+code{
+  background-color: $olive-yellow;
+  color: $light-yellow;
+  padding: 0px 5px;
+  display: inline-block;
+  border-radius: 5px;
+}

@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+@each $fonts, $font in $fonts{
+  @each $prop, $_ in $font{
+    @font-face {
+      font-family: '#{$fonts} #{$prop}';
+      src: url('/fonts/#{$fonts}/#{$fonts}-#{$prop}/#{$fonts}-#{$prop}.woff2') format('woff2'),
+          url('/fonts/#{$fonts}/#{$fonts}-#{$prop}/#{$fonts}-#{$prop}.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  } 
+}
+
+
+h1{
+  @include font-size($h1-font-sizes);
+}
+
+h2{
+  @include font-size($h2-font-sizes);
+}
+
+h3{
+  @include font-size($h3-font-sizes);
+}
+
+p{
+  @include font-size($p-font-sizes);
+}

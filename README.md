@@ -1,4 +1,4 @@
-## [Ссылка на сайт](https://artemakulenko.github.io/Test/)
+## [Ссылка на сайт](https://artemakulenko.github.io/ModestoFlowers-test-task)
 
 ## [Ссылка на макет](https://www.figma.com/file/E51pDzrtRrAVl7fLjL7UnO/43adf9734b5ed0c3?node-id=0%3A1&t=8RR0XZ5awCI9v72V-1)
 
